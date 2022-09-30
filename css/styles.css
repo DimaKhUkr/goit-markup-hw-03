@@ -7,9 +7,9 @@
   --dark-background-color: #2f303a;
 }
 body {
-  width: 1600px;
+  /* width: 1600px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: "Roboto", sans-serif;
@@ -25,6 +25,8 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1200px;
 }
 
@@ -90,8 +92,8 @@ p {
 /* HERO */
 
 .hero {
-  width: 1600px;
-  padding: 200px 452px;
+  /* width: 1600px;
+  padding: 200px 452px; */
   background-color: var(--dark-background-color);
   text-align: center;
 }
@@ -208,20 +210,28 @@ p {
   background-color: var(--dark-background-color);
 }
 .down .logo {
+  display: inline-block;
+  margin-bottom: 20px;
   color: var(--background-color);
 }
 .address-links .link {
+  display: inline-block;
   color: rgba(255, 255, 255, 0.6);
 }
 .address-links .map-link.link {
+  margin-bottom: 9px;
   color: var(--background-color);
 }
 .address-links .link:hover,
 .address-links .link:focus {
   color: var(--alt-text-color);
 }
+.down li:nth-child(2) {
+  margin-bottom: 9px;
+}
 
-section.section {
+section.section,
+.down {
   padding-top: 94px;
   padding-bottom: 94px;
 }

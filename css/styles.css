@@ -45,7 +45,7 @@ p {
 }
 
 /* **Header** */
-.head {
+.header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -61,17 +61,17 @@ p {
   color: var(--alt-text-color);
 }
 
-.head-navigation .link.current {
+.header-navigation .link.current {
   color: var(--alt-text-color);
 }
-.head-navigation .link {
+.header-navigation .link {
   color: var(--tittle-text-color);
 }
-.head-contacts .link {
+.header-contacts .link {
   color: var(--text-color);
 }
-.head .link:focus,
-.head .link:hover {
+.header .link:focus,
+.header .link:hover {
   color: var(--alt-text-color);
 }
 

@@ -57,8 +57,30 @@ p {
   font-size: 26px;
   line-height: 1.19;
 }
+.logo.link {
+  margin-right: 93px;
+}
 .logo-alt {
   color: var(--alt-text-color);
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header .main-nav {
+  display: flex;
+  align-items: center;
+}
+.header-navigation {
+  display: flex;
+}
+.nav-item .header-link {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+.header .nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-navigation .link.current {
@@ -67,11 +89,18 @@ p {
 .header-navigation .link {
   color: var(--tittle-text-color);
 }
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.header-contacts .contacts-item + .contacts-item {
+  margin-left: 50px;
+}
 .header-contacts .link {
   color: var(--text-color);
 }
-.header .link:focus,
-.header .link:hover {
+.header .header-link:focus,
+.header .header-link:hover {
   color: var(--alt-text-color);
 }
 
@@ -139,9 +168,22 @@ p {
 .features-description {
   line-height: 1.71;
 }
+.features-list {
+  display: flex;
+}
+.features-item {
+  width: calc(100% -3 * 30px) / 4;
+}
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* Works */
 .works-title {
   margin-bottom: 50px;
+}
+.works-list {
+  display: flex;
+  justify-content: space-between;
 }
 /* Team */
 .team {
@@ -152,10 +194,12 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 .team-role {
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 .team-image {
   margin-bottom: 30px;
@@ -164,8 +208,16 @@ p {
   margin-bottom: 50px;
 }
 
-.team li {
+.team .team-item {
   padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
 }
 /* ** Portfolio Main ** */
 
@@ -205,6 +257,30 @@ p {
 .example-cards li {
   padding-bottom: 20px;
 }
+.example-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.examples .example-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.examples .example-item {
+  width: calc((100% - 60px) / 3);
+}
+.examples .example-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.examples .example-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
 /* ** Footer ** */
 .down {
   background-color: var(--dark-background-color);

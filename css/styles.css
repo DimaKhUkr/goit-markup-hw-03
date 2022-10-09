@@ -57,7 +57,7 @@ p {
   font-size: 26px;
   line-height: 1.19;
 }
-.logo.link {
+.main-nav > .logo.link {
   margin-right: 93px;
 }
 .logo-alt {
@@ -96,8 +96,10 @@ p {
 .header-contacts .contacts-item + .contacts-item {
   margin-left: 50px;
 }
-.header-contacts .link {
+.header-contacts .header-link {
   color: var(--text-color);
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .header .header-link:focus,
 .header .header-link:hover {
@@ -128,6 +130,10 @@ p {
   padding: 200px 452px; */
   background-color: var(--dark-background-color);
   text-align: center;
+}
+.hero.section {
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 .hero-title {
   margin-top: 0;
@@ -183,6 +189,9 @@ p {
 }  */
 
 /* Works */
+.section.works {
+  padding-top: 0;
+}
 .works-title {
   margin-bottom: 50px;
 }
@@ -313,6 +322,8 @@ p {
 }
 /* ** Footer ** */
 .down {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--dark-background-color);
 }
 .down .logo {
@@ -336,8 +347,7 @@ p {
   margin-bottom: 9px;
 }
 
-section.section,
-.down {
+section.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
